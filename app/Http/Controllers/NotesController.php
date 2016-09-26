@@ -36,7 +36,7 @@ class NotesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**

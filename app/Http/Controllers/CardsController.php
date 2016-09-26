@@ -20,13 +20,13 @@ class CardsController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
+     * Show the form for creating a new .res
+     *ource
      * @return \Illuminate\Http\Response
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -48,7 +48,6 @@ class CardsController extends Controller
      */
     public function show(Card $card)
     {
-
         return $card;
     }
 
