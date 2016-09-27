@@ -12,7 +12,7 @@
                 <th>Title</th>
                 @foreach($cards as $card)
              <tr>
-                 <td>{{$card->id}}</td>
+                <td><a href="/cards/{{$card->id}}"> {{$card->id}}</a></td>
                  <td>{{$card->title}}</td>
                  <br>
              </tr>

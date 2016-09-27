@@ -8,11 +8,7 @@ use App\Http\Requests;
 
 class CardsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
         $cards = Card::all();
@@ -49,7 +45,7 @@ class CardsController extends Controller
     public function show(Card $card)
     {
 
-        return $card;
+        return view('pages.show', compact('card'));
     }
 
     /**

@@ -16,4 +16,6 @@ Route::get('/','CardsController@index');
 Route::get('/cards/{card}','CardsController@show');
 
 Route::get('/notes','NotesController@index');
+Route::post('/cards/{card}/notes','NotesController@store');
+
 
