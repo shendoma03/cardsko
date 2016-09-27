@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class CardsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,7 +11,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-         $this->call(CardsTableSeeder::class);
-         $this->call(NotesTableSeeder::class);
+        DB::table('cards')->insert([
+            'title' => str_random(10)
+
+        ]);
     }
 }
