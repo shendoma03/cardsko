@@ -5,8 +5,8 @@
     @endforeach
 
     <h3>Add new note</h3>
-    <form method="POST" action="/cards/{{ $card->id }}/notes">
-
+    <form method="POST" action="/notes/{{ $card->id }}" >
+        {{ csrf_field() }}
         <div class="form-group">
         <textarea name="body"></textarea>
         <div class="form-group">
