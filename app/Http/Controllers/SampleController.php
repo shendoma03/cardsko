@@ -3,22 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Card;
+
 use App\Http\Requests;
+use PhpParser\Node\Expr\New_;
 
-class CardsController extends Controller
+class SampleController extends Controller
 {
-
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function index()
     {
-        $cards = Card::all();
-        return view('pages.index', compact('cards'));
-    }
 
-    public function qrSearch()
-    {
-        $cards = Card::all();
-        return view('pages.addSample', compact('cards'));
+        $r
+        return view('addSample',compact('$r'));
+
     }
 
     /**
@@ -48,10 +49,9 @@ class CardsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Card $card)
+    public function show($id)
     {
-
-        return view('pages.show', compact('card'));
+        //
     }
 
     /**

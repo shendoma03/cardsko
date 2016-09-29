@@ -18,4 +18,4 @@ Route::get('/cards/{card}','CardsController@show');
 Route::get('/notes','NotesController@index');
 Route::post('notes/{card}','NotesController@store');
 
-
+Route::get('sample','CardsController@qrSearch');
